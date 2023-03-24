@@ -14,3 +14,7 @@ class Votant(models.Model):
     votant = models.ForeignKey(User, on_delete=models.CASCADE)
     idee = models.ForeignKey(Idee, on_delete=models.CASCADE)
     type_vote = models.BooleanField()
+    
+    class Meta:
+        # Contrainte unique pour empêcher qu'un utilisateur vote plusieurs fois pour la même idée
+        unique_together = ('votant', 'idee')

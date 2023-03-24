@@ -1,0 +1,70 @@
+/* Style pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style pour l'en-tête de la page */
+  header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Style pour le titre principal */
+  h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  /* Style pour les liens de navigation */
+  header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    flex: 1;
+  }
+  
+  /* Style pour le lien de déconnexion */
+  header a:last-child {
+    margin-left: 10px;
+  }
+  
+  /* Style pour le contenu principal */
+  main {
+    padding: 20px;
+  }
+  
+  /* Style pour les messages d'erreur */
+  .error-message {
+    color: red;
+  }
+  
+  /* Style pour les messages de succès */
+  .success-message {
+    color: green;
+  }
+  
+  /* Style pour les liens de navigation dans la barre de l'utilisateur */
+  .user-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style pour le nom d'utilisateur dans la barre de l'utilisateur */
+  .user-nav span {
+    margin-right: 10px;
+  }
+  
+  /* Style pour le lien de déconnexion dans la barre de l'utilisateur */
+  .user-nav a:last-child {
+    margin-left: 10px;
+  }
+  
+  
+
+  

@@ -1,0 +1,54 @@
+/* Style pour le formulaire de connexion */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 500px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Style pour le titre du formulaire */
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  /* Style pour les champs du formulaire */
+  form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #eee;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+  }
+  
+  /* Style pour le bouton de soumission */
+  form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Style pour le lien de création de compte */
+  form a {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+  }
+  

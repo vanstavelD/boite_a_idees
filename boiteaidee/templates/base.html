@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boite à idées</title>
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+
+    {% block head%}
+    {% endblock head %}
+</head>
+<body>
+    <header>
+        <h1>La Boite à idées</h1>
+        {% if user.is_authenticated %}
+          <div class="user-nav">
+            <a href="{% url 'ajouter_idee' %}">Ajouter une idée</a>
+            <a href="{% url 'afficher_idees' %}">Idées</a>
+            <span>{{ user.username }}</span>
+            <a href="{% url 'logout' %}">Déconnexion</a>
+          </div>
+        {% else %}
+          <div class="user-nav">
+            <a href="{% url 'login' %}">Connexion</a>
+            <a href="{% url 'signup' %}">S'inscrire</a>
+          </div>
+        {% endif %}
+      </header>
+      
+
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

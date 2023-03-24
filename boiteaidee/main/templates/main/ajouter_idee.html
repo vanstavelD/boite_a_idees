@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head%}
+<link rel="stylesheet" href="{% static 'main/ajouter_idee.css' %}">
+{% endblock head %}
+
+{% block content %}
+  <h2>Ajouter une idée</h2>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button type="submit">Ajouter</button>
+  </form>
+{% endblock %}
